@@ -1,0 +1,14 @@
+#include<iostream>
+ main()
+{
+	printf("Nurgina Maulina\n");
+	printf("F1B019110\n");
+	printf("Kelompok 19\n\n");
+	
+	int Nim [10], i;
+	for(i=0; i<=10; i++)
+	{
+		printf("Masukkan Nim ke-%i:", i+1);
+		scanf("%i", &Nim[i]);
+	}
+}

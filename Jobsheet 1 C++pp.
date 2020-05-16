@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	 cout<<"Nurgina Maulina,F1B019110, kelompok 19\n\n";
+	 int nim[10] = {9,8,7,6,5,4,3,2,1,0};
+	 
+	 cout<<"Nim ke-1 =" <<nim[0]<<endl;
+	 cout<<"Nim ke-2 =" <<nim[1]<<endl;
+	  cout<<"Nim ke-3 =" <<nim[2]<<endl;
+	   cout<<"Nim ke-4 =" <<nim[3]<<endl; 
+	    cout<<"Nim ke-5 =" <<nim[4]<<endl; 
+		 cout<<"Nim ke-6 =" <<nim[5]<<endl; 
+		  cout<<"Nim ke-7 =" <<nim[6]<<endl; 
+		   cout<<"Nim ke-8 =" <<nim[7]<<endl; 
+		    cout<<"Nim ke-9 =" <<nim[8]<<endl;
+			 cout<<"Nim ke-10 =" <<nim[9]<<endl;  
+}

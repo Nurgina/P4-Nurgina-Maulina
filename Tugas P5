@@ -1,0 +1,169 @@
+#include<iostream>
+#include<iomanip>
+#include<string>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	int i, nilai, benar=0, salah=0;
+	string user, pass;
+	char pilihanlogin, pilihan, jawab, pilih;
+	ulang : 
+	cout<<" \tMenu Login!!\n\n";
+	cout<<" Masukkan Ussername : ";cin>>user;cout<<"\n";
+	cout<<" Masukkan Password  : ";cin>>pass;cout<<"\n";
+			if (user == "Gina" && pass == "f1b019110")
+			{
+				cout<<"Selamat Anda Berhasil Login\n";
+			}
+			else
+			{
+				cout<<"Ussername dan password anda salah silahkan coba kembali \n";
+				cout<<"\t\t\t Coba lagi ?[y/t]  : ";cin>>pilihanlogin;cout<<"\t\t\n";
+					if (pilihanlogin=='y' || pilihanlogin=='Y')
+					{system("cls");
+					goto ulang;}
+					else{goto selesai;}
+					if (pilihanlogin=='t' || pilihanlogin=='T')
+					{goto selesai;}		
+			}
+	system("pause");				
+	cout<<"-------------------------------------------------------------------------\n";
+	system("cls");
+	{
+    ulangjwb :
+    cout<<"PILIH SALAH SATU JAWABAN YANG MENURUT ANDA BENAR, ANTARA A, B, C, ATAU D!\n";
+	cout<<"=========================================================================\n";
+	cout<<"1.perintah yang menggunakan untuk menampilkan suatu informasi ke piranti output (layar) adalah... ??\n";
+    string pilgan5[50]={"a.cout ","b.cin ","c.int ","d.void "};
+	for (i=0;i<=3;i++)
+	{cout<<pilgan5[i]<<"\n";}
+    cout<<"Jawaban : ";
+    cin >> jawab;
+            if(jawab == 'a' || jawab == 'A')
+        {benar++;}
+        else{
+        salah++;}
+	cout<<"\n";
+	cout<<"2. operator logika yang menyatakan “atau” dalam lambang berikut ini adalah... ??\n";
+	string pilgan10[50]={"a.&& ","b.! ","c.= ","d.|| "};
+	for (i=0;i<=3;i++)
+	{cout<<pilgan10[i]<<"\n";}
+	cout<<"Jawaban : ";
+    cin >> jawab;
+            if(jawab == 'd' || jawab == 'D')
+        {benar++;}
+        else{
+        salah++;} 
+    cout<<"\n";
+    cout<<"3. Fungsi dari operator % sebagai...??\n";
+	string pilgan6[50]={"a.Mencari sisa pembagian 2 bilangan ","b.Pembagian 2 bilangan ","c.Prosentase 2 bilangan  ","d.Membagi perseratus persen "};
+	for (i=0;i<=3;i++)
+	{cout<<pilgan6[i]<<"\n";}
+	cout<<"Jawaban : ";
+    cin >> jawab;
+        if(jawab == 'a' || jawab == 'A')
+        {benar++;}
+        else{
+        salah++;}     
+	cout<<"\n";
+	cout<<"4. Operator yang digunakan dalam operasi yang melibatkan tiga buah operand adalah... ??\n";
+	string pilgan9[50]={"a.Operator Ternary ","b.Operator Unary ","c.Operator Logika ","d.Operator Bitwise"};
+	for (i=0;i<=3;i++)
+	{cout<<pilgan9[i]<<"\n";}
+	cout<<"Jawaban : ";
+    cin >> jawab;
+            if(jawab == 'a' || jawab == 'A')
+        {benar++;}
+        else{
+        salah++;}
+	cout<<"\n";
+	cout<<"5.Operator logika && adalah...??\n";
+	string pilgan8[50]={"a.and ","b.nand ","c.or ","d.for "};
+    for (i=0;i<=3;i++)
+	{cout<<pilgan8[i]<<"\n";}
+	cout<<"Jawaban : ";
+    cin >> jawab;
+            if(jawab == 'a' || jawab == 'A')
+        {benar++;}
+        else{
+        salah++;}
+	cout<<"\n";
+	cout<<"6.Compiler C++ yang telah beredar di pasaran antara lain, kecuali... ??\n";
+    string pilgan2[50]={"a.Visual C++ ","b. Pascal C++ ","c.Turbo C++ ","d.Dev C++ "};
+	for (i=0;i<=3;i++)
+	{cout<<pilgan2[i]<<"\n";}
+    cout<<"Jawaban : ";
+    cin >> jawab;
+        if(jawab == 'b' || jawab == 'B')
+        {benar++;}
+        else{
+        salah++;}
+    cout<<"\n";
+    cout<<"7.Perintah Cin pada Program C++ digunakan untuk... ??\n";
+	string pilgan3[50]={"a.Statement while .... do ","b.Pendeklarasian variabel ","c.Menampilkan data pada layar","d.Menginput suatu nilai dari suatu piranti masukan (keyboard) "};
+	for (i=0;i<=3;i++)
+	{cout<<pilgan3[i]<<"\n";}
+    cout<<"Jawaban : ";
+    cin >> jawab;
+        if(jawab == 'd' || jawab == 'D')
+        {benar++;}
+        else{
+        salah++;}
+	cout<<"\n";
+	cout<<"8. Penggunaan operator aritmatika yang benar dalam C++ yaitu...??\n";
+	string pilgan1[50]={"a.Float x, X, z = 0; ","b. I++; ","c.T = x + angka; ","d.While(i<=30); "};
+	for (i=0;i<=3;i++)
+	{cout<<pilgan1[i]<<"\n";}
+    cout<<"Jawaban : ";
+    cin >> jawab;
+        if(jawab == 'c' || jawab == 'c')
+        {benar++;}
+        else{
+        salah++;}
+    cout<<"\n";
+    cout<<"9. Yang termasuk operator logika ingkaran adalah...??\n";
+	string pilgan4[50]={"a.<> ","b|| ","c.&& ","d.! "};
+    for (i=0;i<=3;i++)
+	{cout<<pilgan4[i]<<"\n";}
+	cout<<"Jawaban : ";
+    cin >> jawab;
+        if(jawab == 'd' || jawab == 'D')
+        {benar++;}
+        else{
+        salah++;}
+    cout<<"\n";
+    cout<<"10.Bilangan yang mengandung pecahan, paling sedikit harus ada satu digit angka sebelum dan sesudah titik desimal termasuk dalam tipe data...
+A. Riil ??\n";
+	string pilgan7[50]={"a.bollean ","b..byte ","c.integer ","d.Rill "};
+	for (i=0;i<=3;i++)
+	{cout<<pilgan7[i]<<"\n";}
+    cout<<"Jawaban : ";
+    cin >> jawab;
+        if(jawab == 'd' || jawab == 'D')
+        {benar++;}
+        else{
+        salah++;}
+	cout<<"\n";
+    cout<<"Apakah anda yakin dengan jawaban anda??[y/t]\n";cin>>pilihan;cout<<"\n";
+					if (pilihan=='y' || pilihan=='Y')
+					{goto nilai;}
+					
+					if (pilihan=='t' || pilihan=='T')
+					{system("cls"); 
+					goto ulangjwb;
+					cout<<endl;}												       
+
+	}		nilai :
+					cout<<"=====================================================\n";
+					cout<<"Perolehan Nilai :"<<endl;
+            		nilai = benar*10;
+            		cout<<"    Jumlah Benar : "<<benar<<" soal "<<endl;
+            		cout<<"    Jumlah Salah : "<<salah<<" soal "<<endl;
+            		cout<<"    Nilai Anda   : "<<nilai<<"\n"<<endl;
+			selesai : 
+			cout<<"==========================="<<endl;
+			cout<<"TERIMA KASIH SUDAH MENGIKUTI ULANGAN\n";
+			cout<<"==========================="<<endl;
+	
+}
